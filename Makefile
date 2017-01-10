@@ -7,7 +7,7 @@ OBJECTS = $(SOURCES:.cpp=.o)
 
 EXECUTABLE = pomo
 
-CFLAGS += `pkg-config --cflags --libs libnotify`
+CFLAGS += `pkg-config --cflags --libs libnotify gtk+-2.0`
 
 all: $(SOURCES) $(OBJECTS)
 	 
